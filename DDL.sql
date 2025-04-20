@@ -15,6 +15,7 @@ CREATE TABLE book (
     FOREIGN KEY (library_id) REFERENCES Library(library_id)
 );
 
+
 -- Table: Category
 CREATE TABLE category (
     category_id SERIAL PRIMARY KEY,

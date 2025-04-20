@@ -28,7 +28,7 @@ GROUP BY 	b.title
 ORDER BY 	times_borrowed DESC;
 
 --4
-SELECT 		u.user_name, 
+SELECT 		u.name, 
 			h.hold_date, 
 			h.expiry_date
 FROM		"user" u
@@ -42,4 +42,5 @@ SELECT 		c.category_name,
 FROM 		category c
 JOIN 		book_category bc 
 ON 			c.category_id = bc.category_id
-GROUP BY 	c.category_name;
+GROUP BY 	c.category_name
+ORDER BY 	total_books DESC;
